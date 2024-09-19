@@ -200,6 +200,20 @@ header {
         background-image: none; /* Oculta la imagen de fondo */
     }
 }
+@media (max-width: 768px) {
+    .blog h2 {
+        font-size: 2rem; 
+        margin: 1rem 0; 
+    }
+
+    .blog p {
+        font-size: 1.7rem; /* Ajusta el tamaño del texto del párrafo */
+        margin-bottom: 1rem;
+        line-height: 1.4; 
+    }
+}
+
+
 /*Estilo para las imagenes de la seccion aptitudes*/
 .imagenes-container {   
     display: flex;        
@@ -224,7 +238,19 @@ header {
 
     .imagenes-container img:nth-child(5) {
         grid-column: 2 / 3; 
+    }
    
+}
+
+@media (max-width: 360px) {
+    .slide3 h2 {
+        font-size: 3rem; 
+    }
+
+    .imagenes-container img {
+        width: 8rem; 
+        height: auto;
+    }
 }
 /**********************************/
 /* Estilos para la sección del CV */
@@ -324,10 +350,6 @@ header {
 
 
 /**********************************/
-/**********************************/
-/**********************************/
-/**********************************/
-
 
 footer{
     text-align: center;
