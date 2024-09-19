@@ -114,6 +114,11 @@ header {
     background-color: var(--primario);    
  
 }
+@media (max-width: 768px) {
+    .nav {
+        justify-content: center; /* Centra los enlaces en dispositivos móviles */
+    }
+}
 /* Seccion Hero */
 .hero{
     display: flex;
@@ -133,6 +138,23 @@ header {
         margin-left: 10rem;
         font-size: 3rem;
     }    
+}
+/* Estilos para dispositivos con ancho menor a 768px */
+@media (max-width: 768px) {
+    .hero-texto {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos verticalmente */
+        align-items: center; /* Centra los elementos */
+        gap: 2rem; /* Espacio entre los botones */
+    }
+    .hero-texto h1{
+        text-align: center;
+    }
+    .hero-texto .boton {
+        width: 80%; /* Ajusta el ancho de los botones */
+        text-align: center;
+        margin: 3px 0;
+    }
 }
 /*Seccion Sobre mi*/
 .blog {   
@@ -173,7 +195,37 @@ header {
     width: 10rem;            
     height: auto;
 }
+@media (max-width: 768px) {
+    .slide2 {
+        background-image: none; /* Oculta la imagen de fondo */
+    }
+}
+/*Estilo para las imagenes de la seccion aptitudes*/
+.imagenes-container {   
+    display: flex;        
+    justify-content: center; 
+    gap: 1rem;           
+}
 
+.imagenes-container img {
+    width: 10rem;            
+    height: auto;
+}
+@media (max-width: 768px) {
+    .imagenes-container {
+        display: grid;                      
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1rem;                          
+    }
+
+    .imagenes-container img:nth-child(4) {
+        grid-column: 1 / 2; 
+    }
+
+    .imagenes-container img:nth-child(5) {
+        grid-column: 2 / 3; 
+   
+}
 /**********************************/
 /* Estilos para la sección del CV */
 .cv-section {
@@ -269,6 +321,12 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
+
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
 
 
 footer{
