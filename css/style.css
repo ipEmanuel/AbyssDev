@@ -1,0 +1,278 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #161616;
+    --primario: #febe00e3;
+    --secundario: #ffc107;
+   /*--terciario: #FF821F;*/
+}
+/* Globales */
+html{
+    height: 100%;
+    font-size:62.5%;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*Hack para Box Model*/ 
+}
+.slide1,.slide2,.slide3,.slide4 {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+body{
+    font-size: 16px;/*1rem = 10px*/
+    font-family: "Cairo", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1,h3,p{
+    color: var(--blanco);
+}
+h2{
+    color: var(--secundario);
+}
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+.slides{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    
+}
+#particles-js {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    z-index: -1; 
+}
+header {
+    position: relative; 
+    z-index: 1000;
+}
+.slide1{
+    position: relative;
+    background-color: var(--oscuro);
+    z-index: 0;
+}
+.slide2{
+    background-color: var(--oscuro);
+    background-image: url('/img/space2.png'); 
+    background-size: cover;      
+    background-position: center;
+    background-size: 150%;   
+}
+.slide3{
+    background-color: var(--oscuro);
+}
+.slide3 h2{ 
+    font-size: 3rem;
+}
+.slide4{
+    background-color: var(--oscuro);
+}
+.boton{
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem 2.5rem;
+    margin: 5rem .5rem;
+    border-radius: 1.8rem;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+    font-size: 2rem;
+    display: inline-block;
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: var(--terciario);
+}
+/* Navegacion/Menu */
+.nav{
+    display: flex;
+    justify-content: flex-end; 
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.nav a{
+    color: var(--blanco);
+    align-items: center;
+    padding: 1rem;
+
+}
+.nav a:hover{
+    background-color: var(--primario);    
+ 
+}
+/* Seccion Hero */
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-texto {
+    position: relative;
+    z-index: 1; 
+}
+
+.hero-texto h1{
+    font-size: 5rem;
+}
+@media (min-width: 768px) {
+    .hero-texto p{
+        margin-left: 10rem;
+        font-size: 3rem;
+    }    
+}
+/*Seccion Sobre mi*/
+.blog {   
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    justify-content: center;   
+    max-width: 80%;            
+    text-align: justify;        
+}
+.blog h2{
+   
+    margin: 2rem 0;
+    font-size: 3rem;
+    text-align: left; 
+    width: 100%; 
+}
+.blog p {
+    font-size: 2rem;
+    margin-bottom: 2rem;         
+    line-height: 1.6;          
+}
+.slide3{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding: 2rem;
+}
+.slide3 h2{ 
+    margin-bottom: 2rem;
+}
+.imagenes-container {   
+    display: flex;        
+    justify-content: center; 
+    gap: 1rem;           
+}
+.imagenes-container img {
+    width: 10rem;            
+    height: auto;
+}
+
+/**********************************/
+/* Estilos para la sección del CV */
+.cv-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background-color: var(--oscuro);
+    color:var(--blanco) ;
+    gap: 2rem;
+}
+
+/* Contenedor de cada bloque del CV */
+.cv-block {
+    width: 90%;
+    max-width: 800px;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+/* Títulos de las secciones del CV */
+.cv-title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--secundario);
+    border-bottom: 2px solid var(--secundario); 
+    padding-bottom: 0.5rem;
+}
+
+/* Párrafos de texto */
+.cv-text {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: var(--blanco);
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* Listas de contenido */
+.cv-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cv-list-item {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+    padding-left: 2.5rem;
+    position: relative;
+}
+
+/* Punto personalizado para listas */
+.cv-list-item:before {
+    content: "►";
+    position: absolute;
+    left: 0;
+    color: var(--secundario);
+    font-size: 1.5rem;
+}
+
+/* Estilo para enlaces */
+.cv-link {
+    color:var(--secundario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cv-link:hover {
+    color: var(--blanco);
+}
+
+/* Contenedor para la sección de perfil */
+.cv-profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+    margin-bottom: 2rem;
+}
+.cv-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--secundario);
+    margin-bottom: 1rem;
+}
+
+
+.cv-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
