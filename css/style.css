@@ -333,14 +333,15 @@ header {
     margin-bottom: 2rem;
 }
 .cv-image {
-    width: 150px;
+    width: 150px; /* Tamaño fijo para resoluciones grandes */
     height: 150px;
+    max-width: 100%; /* Asegúrate de que la imagen no se expanda más allá de su contenedor */
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--secundario);
     margin-bottom: 1rem;
 }
-
 
 .cv-info {
     display: flex;
