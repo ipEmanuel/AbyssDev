@@ -1,8 +1,8 @@
 :root{
     --blanco: #ffffff;
     --oscuro: #161616;
-    --primario: #febe00e3;
-    --secundario: #ffc107;
+    --primario:#ffc107;
+    --secundario: #003366;
    /*--terciario: #FF821F;*/
 }
 /* Globales */
@@ -16,10 +16,6 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;/*Hack para Box Model*/ 
-}
-.slide1,.slide2,.slide3,.slide4 {
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
 }
 body{
     font-size: 16px;/*1rem = 10px*/
@@ -35,17 +31,8 @@ h2{
     color: var(--secundario);
 }
 .contenedor{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
-}
-.slides{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    
 }
 #particles-js {
     position: fixed; 
@@ -54,10 +41,26 @@ h2{
     width: 100%;
     height: 100vh; 
     z-index: -1; 
+    pointer-events: none; 
 }
 header {
     position: relative; 
     z-index: 1000;
+}
+.slides{
+    /* position: relative;
+    z-index: 1; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    
+}
+.slide,.slide1,.slide2,.slide3,.slide4 {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 .slide1{
     position: relative;
@@ -65,8 +68,8 @@ header {
     z-index: 0;
 }
 .slide2{
-    background-color: var(--oscuro);
-    background-image: url('../img/space2.png'); 
+    background-color:var(--oscuro); 
+     background-image: url('../img/space2.png');  
     background-size: cover;      
     background-position: center;
     background-size: 150%;   
@@ -80,22 +83,25 @@ header {
 .slide4{
     background-color: var(--oscuro);
 }
-.boton{
-    background-color: var(--primario);
+.icono{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
     color: var(--blanco);
-    padding: 1rem 2.5rem;
-    margin: 5rem .5rem;
-    border-radius: 1.8rem;
-    text-align: center;
-    border: none;
-    font-weight: 600;
-    font-size: 2rem;
-    display: inline-block;
+    transition: color .3s ease;
+    text-decoration: none;
 }
-.boton:hover{
-    cursor: pointer;
-    background-color: var(--terciario);
+.icono svg{
+    width: 3rem;
+    height: 3rem;
+    fill: var(--blanco);
 }
+
+.icono:hover{
+    fill:var(--secundario)
+}
+
 /* Navegacion/Menu */
 .nav{
     display: flex;
@@ -139,6 +145,7 @@ header {
         font-size: 3rem;
     }    
 }
+
 /* Estilos para dispositivos con ancho menor a 768px */
 @media (max-width: 768px) {
     .hero-texto {
@@ -156,6 +163,32 @@ header {
         margin: 3px 0;
     }
 }
+/*Seccion Proyectos*/
+.projects {
+    background-color: #161616;
+  }
+
+  .project-card {
+    background-color: #222;
+    border-radius: 12px;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: scale(1.02);
+  }
+
+  .project-card img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+  }
+
 /*Seccion Sobre mi*/
 .blog {   
     display: flex;             
@@ -241,7 +274,9 @@ header {
     }
    
 }
-
+.highlight{
+    color: var(--primario);
+}
 @media (max-width: 360px) {
     .slide3 h2 {
         font-size: 3rem; 
