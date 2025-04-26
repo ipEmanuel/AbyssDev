@@ -2,7 +2,7 @@
     --blanco: #ffffff;
     --oscuro: #161616;
     --primario:#ffc107;
-    --secundario: #003366;
+    --secundario:#6A0DAD;
    /*--terciario: #FF821F;*/
 }
 /* Globales */
@@ -83,23 +83,33 @@ header {
 .slide4{
     background-color: var(--oscuro);
 }
-.icono{
-    display:inline-flex;
-    align-items: center;
+
+.iconos {
+    display: flex;
+    gap: 2rem;
     justify-content: center;
-    padding: .5rem;
-    color: var(--blanco);
-    transition: color .3s ease;
-    text-decoration: none;
+    margin-top: 2rem;
 }
-.icono svg{
-    width: 3rem;
-    height: 3rem;
-    fill: var(--blanco);
+  
+.icono {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 1rem;
+color: var(--blanco);
+transition: color 0.3s ease;
+text-decoration: none;
 }
 
-.icono:hover{
-    fill:var(--secundario)
+.icono svg {
+width: 2.5rem;  
+height: 2.5rem;
+}
+
+
+
+.icono:hover {
+color: var(--secundario);
 }
 
 /* Navegacion/Menu */
@@ -117,7 +127,7 @@ header {
 
 }
 .nav a:hover{
-    background-color: var(--primario);    
+    background-color: var(--secundario);    
  
 }
 @media (max-width: 768px) {
