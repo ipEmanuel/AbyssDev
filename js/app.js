@@ -9,6 +9,7 @@
        menu.style.backgroundColor = 'transparent'
      }
  })
+
 particlesJS(
   {
     "particles": {
@@ -137,3 +138,16 @@ function copiarCorreo(){
   document.body.removeChild(correo);
   
 }
+
+const lenis = new Lenis({
+  lerp: 0.1, // suavidad: valores más bajos = más suave (0.05 es bastante lento y fluido)
+  duration: 1, // duración del scroll automático (1 = 1 segundo, 1.5 = 1.5 segundos, etc.)
+  smooth: true,
+})
+
+function raf(time){
+  lenis.raf(time);
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
