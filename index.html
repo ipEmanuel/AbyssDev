@@ -1,151 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desarrollador web - Emanuel Infante">
 
-        <link rel="preload" href="css/normalize.css" as="style">
-        <link rel="stylesheet" href="css/normalize.css">
+    <meta property="og:title" content="Emanuel Infante - Desarrollador Web">
+    <meta property="og:description" content="Desarrollador independiente con experiencia en front-end y back-end">
+    <meta property="og:image" content="img/icono-0.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-dominio.com">
+    <!-- Poner el dominio antes de deployar -->
+    
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
 
-        <link rel="preload" href="css/style.css" as="style">
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 
-        <link rel="icon" type="imagen/png" href="img/icono-0.png">
+    <link rel="icon" type="image/png" href="img/icono-0.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icono-0.png">
 
+    <title>Emanuel Infante</title>
+  </head>
 
-        <title>Emanuel Infante</title>
-    </head>
-
-    <body>        
-        <header id="Header">
-            <nav id="Nav" class="nav">
-                <a href="#home">Home</a>
-                <a href="#Proyectos">Proyectos</a>
-                <a href="#sobremi">Sobre mi</a>
-                <a href="#aptitudes">Aptitudes</a>
-            </nav>
-        </header>
+  <body>        
+    <header class="hero slides slide" role="banner">
+        <div id="particles-js"></div>          
+        <div class="hero-texto contenedor">
+          <h1>Hola, soy <span class="highlight">Emanuel</span></h1>
+          <p>Desarrollador dev independiente</p>
         
-        <section id="home" class="hero slides slide">
-            <div id="particles-js"></div> <!-- Contenedor de partículas -->
-          
-            <div class="hero-texto contenedor">
-              <h1>Hola, soy <span class="highlight">Emanuel</span></h1>
-              <p>Desarrollador dev independiente...</p>
-          
-              <!-- Íconos sociales y email -->
-              <div class="iconos">
+          <nav class="iconos" aria-label="Redes Sociales">
+            <a href="https://www.linkedin.com/in/emanuel-pei" target="_blank" class="icono" aria-label="LinkedIn de Emanuel Infante">                  
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="22" height="22" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                <text x="50%" y="55%" text-anchor="middle" fill="currentColor" font-size="15" font-family="Arial, sans-serif" dy=".3em">in</text>
+              </svg>
+            </a>
 
-                <a href="https://www.linkedin.com/in/emanuel-pei" target="_blank" class="icono">                  
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="22" height="22" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
-                    <text x="50%" y="55%" text-anchor="middle" fill="currentColor" font-size="15" font-family="Arial, sans-serif" dy=".3em">in</text>
-                  </svg>
-               </a>
-          
-                <a href="https://github.com/ipEmanuel" target="_blank" class="icono">
-                  
-                  <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24" role="img">
-                    <!-- <title>Github icon</title> -->
-                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 
-                      3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
-                      0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 
-                      18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 
-                      1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 
-                      3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 
-                      0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 
-                      3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 
-                      3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 
-                      3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 
-                      2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
-                    </path>
-                  </svg>   
+            <a href="https://github.com/ipEmanuel" target="_blank" class="icono" aria-label="GitHub de Emanuel Infante">                     
+              <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24" role="img">                  
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 
+                  3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
+                  0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 
+                  18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 
+                  1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 
+                  3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 
+                  0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 
+                  3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 
+                  3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 
+                  3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 
+                  2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                </path>
+              </svg>       
+            </a>
+            
+            <div class="contenedor-copiar">
+              <button onclick="copiarEmail(this)" class="icono" title="Copiar email">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 3h18c.552 0 1 .448 1 1v16c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V4c0-.552.448-1 1-1z"/>
+                  <path d="M3 7l9 6 9-6"/>
+                </svg>
+              </button>
+              <div class="mensaje-copiado">copiado!</div>
+            </div>
+      
+            <a href="cv.html" target="_blank" class="icono">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="2"/>
+                <text x="50%" y="55%" text-anchor="middle" fill="currentColor" font-size="11" font-family="Arial, sans-serif" dy=".3em">CV</text>
+              </svg>              
+            </a>              
 
-                </a>
+          </nav>          
+          <!-- <div class="iconos"></div>                  -->
+        </div><!-- Fin hero texto ver como mejorar -->  
+    </header>
+      
+    <main>
+      <section class="slides slide1" aria-label="proyectos-titulo">
+        <div class="contenedor project">
+          <h2 class="project-text">Proyectos</h2>
           
-                <a href="mailto:emanueldurandok@gmail.com" class="icono">                              
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 3h18c.552 0 1 .448 1 1v16c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V4c0-.552.448-1 1-1z"/>
-                    <path d="M3 7l9 6 9-6"/>
-                  </svg>
-                </a>
-          
-                <a href="cv.html" target="_blank" class="icono">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="2"/>
-                    <text x="50%" y="55%" text-anchor="middle" fill="currentColor" font-size="11" font-family="Arial, sans-serif" dy=".3em">CV</text>
-                  </svg>              
-                </a>
-
+          <div class="card">
+            <div class="project-card">
+                <img src="img/Ecommerce.jpg" alt="Captura del proyecto E-commerce desarrollado por Emanuel" loading="lazy">
+                <div class="project-info">
+                    <h3>E-commerce</h3>
+                    <p>Tienda online desarrollada con Bootstrap .NET y SQL Server</p>
+                    <a href="https://github.com/ipEmanuel/Ecommerce" target="_blank">Ver en GitHub</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+              <img src="img/tatto.jpg" alt="Captura de la plataforma web para estudio de tatuajes" loading="lazy">
+              <div class="project-info">
+                  <h3>Plataforma web para estudio de Tatuajes</h3>
+                  <p>Plataforma web para estudio de tatuajes, donde los usuarios pueden ver diseños, agendar citas y más.</p>
+                  <a href="https://github.com/ipEmanuel/PaginaDeTatuajes" target="_blank">Ver en GitHub</a>
               </div>
             </div>
-        </section>
-        <main>
-            <section id="Proyectos" class="projects slides slide1">
-                <div class="contenedor projects">
-                    <h2 class="projects-text">Proyectos</h2>
-                    
-                    <div class="card">
-                      <div class="project-card">
-                          <img src="img/Ecommerce.jpg" alt="Proyecto Ecommerce">
-                          <div class="project-info">
-                              <h3>E-commerce</h3>
-                              <p>Tienda online desarrollada con Bootstrap .NET y SQL Server</p>
-                              <a href="https://github.com/ipEmanuel/Ecommerce" target="_blank">Ver en GitHub</a>
-                          </div>
-                      </div>
-                      
-                      <div class="project-card">
-                          <img src="img/tatto.jpg" alt="Plataforma tatuajes">
-                          <div class="project-info">
-                              <h3>Plataforma web para estudio de Tatuajes</h3>
-                              <p>Plataforma web para estudio de tatuajes, donde los usuarios pueden ver diseños, agendar citas y más.</p>
-                              <a href="https://github.com/ipEmanuel/PaginaDeTatuajes" target="_blank">Ver en GitHub</a>
-                          </div>
-                      </div>
-                    </div>
-                </div>
-            </section>
+          </div>
+        </div>
+      </section>
 
-            <section id="sobremi" class= "slides slide2">                
-               <div class="blog contenedor" >               
-                    <h2>Sobre mi</h2>
-                    <p>
-                      ¡Hola! Soy un estudiante de la Tecnicatura Universitaria en Programación en la UTN, apasionado por el mundo del
-                      desarrollo. Aunque me encanta el front-end por la creatividad y diseño que involucra, también disfruto trabajar en el
-                      back-end, donde puedo estructurar y optimizar aplicaciones desde el núcleo.
-                    </p>
-                    <p>
-                      Tengo varios proyectos publicados en mi GitHub que reflejan mi crecimiento y mis ganas de aprender. Además de la
-                      programación, me dedico al arte del tatuaje, donde puedo combinar mi lado creativo con la precisión y detalle que
-                      requiere esta profesión.
-                    </p>
-                    <p>
-                      Siempre estoy en busca de nuevos retos y oportunidades para seguir mejorando mis habilidades tanto en el desarrollo como
-                      en otras áreas que me apasionan.
-                    </p>
-                </div>
-            </section>
+      <section class= "slides slide2" aria-label="sobremi-titulo">                
+        <div class="blog contenedor "  >               
+          <h2 class="blog-titulo">Sobre mi</h2>
+          <p>
+            ¡Hola! Soy un estudiante de la Tecnicatura Universitaria en Programación en la UTN, apasionado por el mundo del
+            desarrollo. Aunque me encanta el front-end por la creatividad y diseño que involucra, también disfruto trabajar en el
+            back-end, donde puedo estructurar y optimizar aplicaciones desde el núcleo.
+          </p>
+          <p>
+            Tengo varios proyectos publicados en mi GitHub que reflejan mi crecimiento y mis ganas de aprender. Además de la
+            programación, me dedico al arte del tatuaje, donde puedo combinar mi lado creativo con la precisión y detalle que
+            requiere esta profesión.
+          </p>
+          <p>
+            Siempre estoy en busca de nuevos retos y oportunidades para seguir mejorando mis habilidades tanto en el desarrollo como
+            en otras áreas que me apasionan.
+          </p>           
+        </div>
+      </section>
+    </main>
+      
+    <footer class="slides slide3">
 
-            <section id="aptitudes" class="slides slide3">
-                <h2>Aptitudes</h2>
-                <div class="imagenes-container iconos"> 
-                    <img class="icono" src="img/icono-2.png" alt="Icono 2">
-                    <img class="icono" src="img/icono-3.png" alt="Icono 3">
-                    <img class="icono" src="img/icono-4.png" alt="Icono 4">
-                    <img class="icono" src="img/icono-5.png" alt="Icono 5">
-                </div>
-            </section>
-        </main>
-        <footer class="slide4">
-          <p>Hecho con 💻 por Emanuel Infante</p>
-        </footer>
-    </body>
+      <nav class="iconos" aria-label="Redes Sociales">
+        <a href="https://www.linkedin.com/in/emanuel-pei" target="_blank" class="icono" aria-label="LinkedIn de Emanuel Infante">                  
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="22" height="22" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+            <text x="50%" y="55%" text-anchor="middle" fill="currentColor" font-size="15" font-family="Arial, sans-serif" dy=".3em">in</text>
+          </svg>
+        </a>
+        <a href="https://github.com/ipEmanuel" target="_blank" class="icono" aria-label="GitHub de Emanuel Infante">                     
+          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24" role="img">                  
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 
+              3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
+              0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 
+              18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 
+              1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 
+              3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 
+              0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 
+              3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 
+              3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 
+              3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 
+              2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+            </path>
+          </svg>       
+        </a>        
+        <div class="contenedor-copiar">
+          <button onclick="copiarEmail(this)" class="icono" title="Copiar email">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 3h18c.552 0 1 .448 1 1v16c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V4c0-.552.448-1 1-1z"/>
+              <path d="M3 7l9 6 9-6"/>
+            </svg>
+          </button>
+          <div class="mensaje-copiado">copiado!</div>
+        </div>  
+        <a href="cv.html" target="_blank" class="icono">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="2"/>
+            <text x="50%" y="55%" text-anchor="middle" fill="currentColor" font-size="11" font-family="Arial, sans-serif" dy=".3em">CV</text>
+          </svg>              
+        </a>              
+      </nav>    
 
-    <!-- JS Particles.js -->
-        <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
-        <script src="js/particles.min.js" ></script>
-        <script src="js/app.js" ></script>
-
+      <p>Hecho con 💻 por Emanuel Infante</p>
+    </footer>
+  </body>
+  <!-- JS Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+  <script src="js/particles.min.js" ></script>
+  <script src="js/app.js" ></script>
 </html>
