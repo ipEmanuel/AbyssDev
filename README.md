@@ -1,8 +1,8 @@
-# PortfolioDev
+# 🐋 AbyssDev
 
 ## 📌 Descripción
-Este es mi portfolio personal como desarrollador web. Presenta una selección de proyectos realizados y contiene información sobre mis habilidades, 
-formación y experiencia. Está pensado para mostrar mi trabajo a reclutadores, clientes o colaboradores.
+Bienvenido a **AbyssDev**, mi portfolio como desarrollador web. Este sitio fue creado para mostrar mis proyectos, habilidades y facilitar el contacto con potenciales clientes, reclutadores o colaboradores. Inspirado en las ballenas jorobadas y en la profundidad del océano, representa mi enfoque: sumergirme a fondo en cada desafío del desarrollo.
+
 
 ## 🛠 Tecnologías utilizadas
 - HTML5
